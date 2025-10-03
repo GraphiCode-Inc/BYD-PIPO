@@ -1,10 +1,12 @@
 "use client";
 // This component is a responsive navigation bar for a landing page, featuring a logo, navigation links, and a button.
 import React, { useState } from "react";
-import Logo from "../../assets/logo.png";
 import Image from "next/image";
 import NavbarItems from "../../../constants/Navbar";
 import { usePathname } from "next/navigation";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
+import { IoCarSportSharp } from "react-icons/io5";
 
 function Navbar(props: any) {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,27 +16,23 @@ function Navbar(props: any) {
   };
 
   return (
-    <div className="w-full  fixed  z-40">
-      <nav className="flex justify-between py-[37px]  flex-row items-center   lg:w-[80%]  w-[100%] lg:mx-[10%] mx-auto max-w-7xl lg:max-w-[80%] lg:px-0 px-6  flex-wrap transition-all">
+    <div className="w-full  fixed bg-[#0000001A] font-primary z-40">
+      <nav className="flex justify-between lg:py-[30px] py-[37px]    flex-row items-center   lg:w-[80%]  w-[100%] lg:mx-[10%] mx-auto max-w-7xl lg:max-w-[80%] lg:px-0 px-6  flex-wrap transition-all">
         {/* Navbar Brand */}
-        <a className="flex flex-row items-center " href="/">
+        <a className="flex flex-col items-center " href="/">
           <Image
-            src={Logo}
+            src="/assets/logo.png"
             alt="logo"
-            className="lg:w-[38px] lg:h-[33px] w-[42.013126373291016px] h-[42.013126373291016px]"
+            width={120}
+            height={120}
+            className=""
           />
-          <h1 className="lg:text-[30.55px] text-[14.94px] font-bold lg:block hidden">
-            CornetX
+          <h1 className="text-[13.55px] font-bold text-white lg:block hidden">
+            BIPO JATINEGARA
           </h1>
         </a>
         {/* Navbar URLS */}
-        <div
-          className="lg:flex flex-row items-center gap-[37px] hidden   p-[5px_30px] bg-[#7D7D7D0D] backdrop-blur-[6.9005889892578125px] shadow-[0px_2.37px_21.24px_0px_rgba(0,0,0,0.25)] w-[827px] h-[58px]  rounded-[20px] "
-          style={{
-            boxShadow:
-              "0.2px 0.1px 0.45px 0px #8F8F8F inset, -0.2px 0px 0.45px 0px #86868600 inset, -0.2px 0.5px 0.45px 0px #B3B3B3 inset , -0.2px 0.5px 0.45px 0px #BFBFBF00 inset",
-          }}
-        >
+        <div className="lg:flex flex-row items-center gap-[30px] hidden justify-center">
           {NavbarItems.map((item, idx) => {
             const isCurrent =
               item.href !== "#" &&
@@ -44,7 +42,7 @@ function Navbar(props: any) {
               <React.Fragment key={item.href}>
                 <a
                   href={item.href}
-                  className={`text-[18.06px] font-medium font-montserrat transition-all  text-white relative`}
+                  className={`text-[18.06px] font-medium transition-all  text-white relative`}
                 >
                   {item.label}
                   {isCurrent && item.href !== "#" && (
@@ -77,18 +75,18 @@ function Navbar(props: any) {
         </div>
         {/* Navbar Button */}
         <div className="lg:block hidden">
-          <button className="border-[1px] border-primary rounded-[49.57px] lg:px-[39px] lg:py-[13.5px] cursor-pointer text-center flex flex-row items-center gap-[9.25px] font-medium ">
+          <button className="border-[1px] border-primary rounded-[100px] text-white bg-black lg:px-[10px] lg:py-[10.5px] cursor-pointer text-center flex flex-row items-center gap-[9.25px] font-medium ">
             {" "}
-            <p> Hire Us </p>{" "}
             <span>
               {" "}
               <Image
-                src={StarsIcon}
-                alt="stars"
+                src={"/assets/booknow.png"}
+                alt="bydbook"
                 width={16.84}
                 height={8.584152221679695}
               />{" "}
             </span>
+            <p> Book Now </p>{" "}
           </button>
         </div>
 
@@ -120,7 +118,7 @@ function Navbar(props: any) {
                             backdrop-blur-[24.87px]
                             "
           >
-            <div className="flex flex-col w-full pt-[95px] gap-[12px] font-montserrat px-8 text-white">
+            <div className="flex flex-col w-full pt-[95px] gap-[12px]  px-8 text-white">
               {NavbarItems.map((item, idx) => (
                 <React.Fragment key={item.href}>
                   {idx !== 0 && (

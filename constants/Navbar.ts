@@ -4,12 +4,12 @@ const NavbarItems = [
         href: "/#services"
     },
     {
-        label: "Terms",
-        href: "/terms"
+        label: "Team",
+        href: "/#team"
     },
     {
-        label: "Privacy",
-        href: "/privacy"
+        label: "Find Us",
+        href: "/#cotact"
     },
     
 ]
