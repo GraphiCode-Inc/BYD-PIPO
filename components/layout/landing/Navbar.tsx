@@ -6,7 +6,6 @@ import NavbarItems from "../../../constants/Navbar";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
-import { IoCarSportSharp } from "react-icons/io5";
 
 function Navbar(props: any) {
   const [isOpen, setIsOpen] = useState(false);
