@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
-import { withNextVideo }  from 'next-video/process'
+import { withNextVideo } from "next-video/process";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  swcMinify: true,
 };
 
 export default withNextVideo(nextConfig);

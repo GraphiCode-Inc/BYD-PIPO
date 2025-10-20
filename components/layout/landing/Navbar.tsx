@@ -24,7 +24,8 @@ function Navbar(props: any) {
             alt="logo"
             width={120}
             height={120}
-            className=""
+            priority // for above-the-fold images
+            quality={85}
           />
           <h1 className="text-[13.55px] font-bold text-white lg:block hidden">
             BIPO JATINEGARA
@@ -83,6 +84,8 @@ function Navbar(props: any) {
                 alt="bydbook"
                 width={16.84}
                 height={8.584152221679695}
+                priority // for above-the-fold images
+                quality={85}
               />{" "}
             </span>
             <p> Book Now </p>{" "}

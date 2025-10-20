@@ -1,7 +1,8 @@
 "use client"
-import { Header } from "@/components/layout/landing/Header/Header";
-import HowItWorks from "@/components/layout/landing/HowItWork/section";
-import Navbar from "@/components/layout/landing/Navbar";
+import dynamic from "next/dynamic";
+const Header = dynamic(() => import('@/components/layout/landing/Header/Header'), { ssr: false });
+const HowItWorks = dynamic(() => import('@/components/layout/landing/HowItWork/section'), { ssr: false });
+const Navbar = dynamic(() => import('@/components/layout/landing/Navbar'), { ssr: false });
 import Image from "next/image"
 export default function HomePage() {
   return (

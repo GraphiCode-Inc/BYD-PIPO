@@ -10,7 +10,7 @@ import { MdHeadsetMic } from "react-icons/md";
 import { AiFillCaretRight } from "react-icons/ai";
 import VideoContainer from "./videoContainer";
 
-export function Header() {
+export default function Header() {
   const [showVideo, setShowVideo] = useState(false);
 
   return (
