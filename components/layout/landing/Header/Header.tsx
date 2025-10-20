@@ -1,11 +1,5 @@
 "use client";
-// This component is a header for a landing page, which includes a title and a subtitle.
 import React, { useState } from "react";
-import Video from "next-video";
-import VideoLa from "/videos/video.mp4";
-import MediaThemeNotflix from "player.style/notflix/react";
-
-import Image from "next/image";
 import { MdHeadsetMic } from "react-icons/md";
 import { AiFillCaretRight } from "react-icons/ai";
 import VideoContainer from "./videoContainer";

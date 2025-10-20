@@ -1,6 +1,7 @@
 import MediaThemeNotflix from 'player.style/notflix/react'
 import React from 'react'
-
+import Video from "next-video";
+import VideoLa from "/videos/video.mp4";
 type VideoContainerProps = {
   onClose: () => void
 }
