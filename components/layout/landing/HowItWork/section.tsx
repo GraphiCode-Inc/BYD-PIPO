@@ -33,7 +33,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="w-full h-[80vh] py-20 bg-white flex flex-col items-center justify-center">
+    <section className="w-full h-[617px] py-20 bg-white flex flex-col items-center justify-center">
       <div className="text-center mb-12 px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
           How it Works
@@ -72,10 +72,9 @@ export default function HowItWorks() {
               viewport={{ once: true }}
               className="w-full md:w-1/4 z-[5]"
             >
-                <h1>sdfsf</h1>
               <Card className="rounded-2xl shadow-md border w-[203.49609375px] h-[266.314453125px] border-gray-100 bg-white hover:shadow-lg transition-all duration-300">
                 <CardContent className="flex flex-col items-center   text-center ">
-                  <div className="w-14 h-14 bg-black text-white   rounded-full mb-4">
+                  <div className="w-14 h-14 bg-black text-white flex justify-center items-center  rounded-full mb-4">
                     <Icon size={24} />
                   </div>
                   <div className='flex flex-col gap-[10px] w-[132.71484375px] items-center '>
