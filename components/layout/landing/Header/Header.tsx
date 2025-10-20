@@ -1,11 +1,22 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { MdHeadsetMic } from "react-icons/md";
 import { AiFillCaretRight } from "react-icons/ai";
 import VideoContainer from "./videoContainer";
 
 export default function Header() {
   const [showVideo, setShowVideo] = useState(false);
+
+  useEffect(() => {
+    if (showVideo) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [showVideo]);
 
   return (
     <div className="w-full lg:h-[1026.37109375px] h-[2295px] flex flex-col items-center justify-start relative pt-[140px] z-30">

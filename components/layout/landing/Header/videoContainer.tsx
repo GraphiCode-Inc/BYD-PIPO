@@ -12,7 +12,7 @@ function VideoContainer({ onClose }: VideoContainerProps) {
       <div className="relative  rounded-2xl  flex flex-col items-center p-8 max-w-4xl w-full">
         {/* Close button */}
         <button
-          className="absolute top-4 right-4 bg-black/40 text-white rounded-full p-2 hover:bg-black/70 z-10"
+          className="absolute top-6 -right-[3%] bg-black/40 text-white rounded-full p-2 hover:bg-black/70 z-10"
           onClick={onClose}
           aria-label="Close video"
         >
