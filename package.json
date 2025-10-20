@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@inquirer/checkbox": "^4.2.4",
+    "@radix-ui/react-slot": "^1.2.3",
     "framer-motion": "^12.23.24",
     "init": "^0.1.2",
     "next": "15.5.3",
