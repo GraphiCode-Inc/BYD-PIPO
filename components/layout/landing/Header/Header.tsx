@@ -18,7 +18,7 @@ export function Header() {
         <div
           className={`w-full h-full flex flex-col items-center lg:gap-[20.76px] gap-[20px]`}
         >
-          <div className="w-full">
+          <div className="w-full flex flex-col gap-[5px] items-center">
             <p className="text-[51.31px] font-bold font-secondary text-[#333333] lg:w-full   text-center">
               Drive the future of mobility
             </p>
@@ -51,7 +51,9 @@ export function Header() {
       </div>
 
       {/* Video button at the bottom of header section */}
-      <div className="w-[532.9292602539062px] flex justify-start border border-white h-[58]  mt-[12%] mr-[66%]">
+
+      <div className="w-[542.9292602539062px] flex justify-start gap-[22px] h-[58]  mt-[12%] mr-[66%]">
+         <div className="w-[80px]">
            <button
           className="w-[56.45px] h-[56.45px] rounded-[1127.96px] opacity-100 backdrop-blur-[4.52px] text-white p-0 shadow-lg border border-white/20 flex flex-col items-center justify-center"
           style={{ transform: "rotate(0deg)" }}
@@ -60,6 +62,9 @@ export function Header() {
         >
           <AiFillCaretRight size={32} color="#fff" />
         </button>
+       </div>
+
+        <p className="font-normal  font-secondary text-[#BAC2CD] lg:text-[18px]">Discover the future of electric driving with BYD Atto 1.Watch the full launch video now.</p>
       </div>
 
       {/* Video modal overlay in center */}

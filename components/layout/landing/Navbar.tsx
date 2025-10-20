@@ -15,7 +15,7 @@ function Navbar(props: any) {
   };
 
   return (
-    <div className="w-full  fixed bg-[#0000001A] font-primary z-40">
+    <div className="w-full h-[] fixed bg-[#0000001A] font-primary z-40">
       <nav className="flex justify-between lg:py-[30px] py-[37px]    flex-row items-center   lg:w-[80%]  w-[100%] lg:mx-[10%] mx-auto max-w-7xl lg:max-w-[80%] lg:px-0 px-6  flex-wrap transition-all">
         {/* Navbar Brand */}
         <a className="flex flex-col items-center " href="/">
