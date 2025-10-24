@@ -2,6 +2,7 @@
 // Maintenance.tsx
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Maintenance() {
@@ -77,12 +78,12 @@ export default function Maintenance() {
         transition={{ delay: 0.8, duration: 0.6 }}
         className="mt-8"
       >
-        <a
+        <Link
           href="/"
           className="inline-block px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-medium rounded-lg transition-colors"
         >
           Go Back Home
-        </a>
+        </Link>
       </motion.div>
 
       {/* Footer */}

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { FiMapPin, FiArrowRight } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 const fadeUp = {
   hidden: { opacity: 0, y: 8 },
   visible: (i: number = 0) => ({ opacity: 1, y: 0, transition: { delay: i * 0.08, duration: 0.45 } }),
@@ -28,7 +29,7 @@ function section() {
             </p>
 
             <div>
-            <a
+            <Link
                 href="https://www.google.com/maps/place/BYD+BIPO+Jatinegara/@-6.2209072,106.8652762,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPTtH0qK4vQ3rx3EpgG9_-LP0bILX6tDu1jvtr-!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fp%2FAF1QipPTtH0qK4vQ3rx3EpgG9_-LP0bILX6tDu1jvtr-%3Dw86-h86-k-no!7i2992!8i2992!4m7!3m6!1s0x2e69f328cf575333:0xc39e5f1a59545540!8m2!3d-6.220841!4d106.8654048!10e5!16s%2Fg%2F11yh0yq39v?entry=ttu&g_ep=EgoyMDI1MDkwNy4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -40,7 +41,7 @@ function section() {
                     <p className="font-secondary font-semibold text-[20px] ">Route</p>
                     <FiArrowRight className="w-6 h-6 ml-1" />
                 </Button>
-            </a>
+            </Link>
             </div>
           </motion.div>
 

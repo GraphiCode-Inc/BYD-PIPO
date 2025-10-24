@@ -6,6 +6,7 @@ import NavbarItems from "../../../constants/Navbar";
 import { usePathname } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
+import Link from "next/link";
 
 function Navbar(props: any) {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ function Navbar(props: any) {
     <div className="w-full h-[] fixed bg-[#0000001A] font-primary z-40">
       <nav className="flex justify-between lg:py-[30px] py-[37px]    flex-row items-center   lg:w-[80%]  w-[100%] lg:mx-[10%] mx-auto max-w-7xl lg:max-w-[80%] lg:px-0 px-6  flex-wrap transition-all">
         {/* Navbar Brand */}
-        <a className="flex flex-col items-center " href="/">
+        <Link className="flex flex-col items-center " href="/">
           <Image
             src="/assets/logo.png"
             alt="logo"
@@ -30,7 +31,7 @@ function Navbar(props: any) {
           <h1 className="text-[13.55px] font-bold text-white lg:block hidden">
             BIPO JATINEGARA
           </h1>
-        </a>
+        </Link>
         {/* Navbar URLS */}
         <div className="lg:flex flex-row items-center gap-[30px] hidden justify-center">
           {NavbarItems.map((item, idx) => {
@@ -40,7 +41,7 @@ function Navbar(props: any) {
                 (item.href.startsWith("/") && pathname.startsWith(item.href)));
             return (
               <React.Fragment key={item.href}>
-                <a
+                <Link
                   href={item.href}
                   className={`text-[18.06px] font-medium transition-all  text-white relative`}
                 >
@@ -56,7 +57,7 @@ function Navbar(props: any) {
                       }}
                     />
                   )}
-                </a>
+                </Link>
                 {idx !== NavbarItems.length - 1 && (
                   <span
                     className="mx-4 inline-block align-middle"
@@ -88,7 +89,8 @@ function Navbar(props: any) {
                 quality={85}
               />{" "}
             </span>
-            <a href="/maintenance"> Book Now </a>{" "}
+                <Link
+             href="/maintenance"> Book Now </Link>{" "}
           </button>
         </div>
 
@@ -134,12 +136,12 @@ function Navbar(props: any) {
                       }}
                     />
                   )}
-                  <a
+                  <Link
                     href={item.href}
                     className="text-[17.78px] font-normal   py-4 text-center w-full"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </React.Fragment>
               ))}
             </div>

@@ -7,6 +7,8 @@ const Navbar = dynamic(() => import("@/components/layout/landing/Navbar"), {
   ssr: false,
   loading: Loading,
 });
+
+
 const Header = dynamic(
   () => import("@/components/layout/landing/Header/Header"),
   { ssr: false, loading: Loading }

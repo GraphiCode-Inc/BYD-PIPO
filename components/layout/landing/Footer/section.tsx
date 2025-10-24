@@ -10,6 +10,7 @@ import {
   FaYoutube,
   FaFacebook,
 } from "react-icons/fa6";
+import Link from "next/link";
 
 const navGroup1 = [
   { label: "Home", href: "/" },
@@ -38,7 +39,7 @@ const SocialIconButton: React.FC<{
     asChild
     className="w-10 h-10 rounded-full border  border-white/40 p-0 flex items-center justify-center bg-transparent hover:bg-white/10 hover:scale-105 transition-all"
   >
-    <a
+    <Link
       href={href}
       target="_blank"
       rel="noopener noreferrer"
@@ -46,7 +47,7 @@ const SocialIconButton: React.FC<{
       className="w-full h-full flex items-center justify-center text-white"
     >
       {children}
-    </a>
+    </Link>
   </Button>
 );
 
@@ -81,33 +82,33 @@ export default function Footer() {
 
             <div className="flex flex-row flex-wrap gap-6 items-start  pt-[60px] w-full links-link">
 
-                <a
+                <Link
                 href=""
                 className="flex items-center justify-center lg:w-[62px] lg:h-[62px] w-[52px] h-[52px] rounded-full border border-white transition-all duration-300 bg-transparent hover:bg-white group"
               >
                 <FaFacebook className="text-white text-2xl transition-colors duration-300 group-hover:text-black" />
-              </a>
+              </Link>
 
 
-              <a
+              <Link
                 href=""
                 className="flex items-center justify-center lg:w-[62px] lg:h-[62px] w-[52px] h-[52px]   rounded-full border border-white transition-all duration-300 bg-transparent hover:bg-white group"
               >
                 <FaXTwitter className="text-white text-2xl  transition-colors duration-300 group-hover:text-black" />
-              </a>
-              <a
+              </Link>
+              <Link
                 href=""
                 className="flex items-center justify-center lg:w-[62px] lg:h-[62px] w-[52px] h-[52px] rounded-full border border-white transition-all duration-300 bg-transparent hover:bg-white group"
               >
                 <FaInstagram className="text-white text-2xl transition-colors duration-300 group-hover:text-black" />
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href=""
                 className="flex items-center justify-center lg:w-[62px] lg:h-[62px] w-[52px] h-[52px] rounded-full border border-white transition-all duration-300 bg-transparent hover:bg-white group"
               >
                 <FaYoutube className="text-white text-2xl transition-colors duration-300 group-hover:text-black" />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -118,12 +119,12 @@ export default function Footer() {
                 <ul className="space-y-3 text-sm">
                   {navGroup1.map((item) => (
                     <li key={item.label}>
-                      <a
+                      <Link
                         href={item.href}
                         className="hover:text-white text-gray-300 transition-colors"
                       >
                         {item.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -133,12 +134,12 @@ export default function Footer() {
                 <ul className="space-y-3 text-sm">
                   {navGroup2.map((item) => (
                     <li key={item.label}>
-                      <a
+                      <Link
                         href={item.href}
                         className="hover:text-white text-gray-300 transition-colors"
                       >
                         {item.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -148,12 +149,12 @@ export default function Footer() {
                 <ul className="space-y-3 text-sm">
                   {navGroup3.map((item) => (
                     <li key={item.label}>
-                      <a
+                      <Link
                         href={item.href}
                         className="hover:text-white text-gray-300 transition-colors"
                       >
                         {item.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
