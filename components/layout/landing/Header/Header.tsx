@@ -61,7 +61,7 @@ export default function Header() {
       <div className="w-[542.9292602539062px] flex justify-start gap-[22px] h-[58]  mt-[12%] mr-[66%]">
         <div className="w-[80px]">
           <button
-            className="w-[56.45px] h-[56.45px] rounded-[1127.96px] opacity-100 backdrop-blur-[4.52px] text-white p-0 shadow-lg border border-white/20 flex flex-col items-center justify-center"
+            className="w-[56.45px] h-[56.45px] rounded-[1127.96px] opacity-100 backdrop-blur-xl cursor-pointer text-white p-0 shadow-lg border border-white/20 flex flex-col items-center justify-center"
             style={{ transform: "rotate(0deg)" }}
             onClick={() => setShowVideo(true)}
             aria-label="Play Video"

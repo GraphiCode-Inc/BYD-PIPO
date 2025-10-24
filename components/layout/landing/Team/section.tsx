@@ -19,7 +19,7 @@ export default function TeamPage() {
       {/* Section 1 - Meet Our Team */}
       <section className="max-w-7xl mx-auto px-6 py-20 text-center border-b border-gray-200">
         <motion.h2
-          className="text-3xl md:text-4xl font-semibold"
+          className="text-3xl md:text-[41px] font-semibold font-secondary text-black "
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
@@ -29,14 +29,14 @@ export default function TeamPage() {
           Meet Our Team
         </motion.h2>
         <motion.p
-          className="mt-3 text-gray-600 max-w-2xl mx-auto"
+          className="mt-3 text-[#000000] font-light  font-secondary text-[17.35px] max-w-2xl mx-auto"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeUp}
           custom={1}
         >
-          <em>The Professionals Behind Your Car Care</em>
+      The Professionals Behind Your Car Care
         </motion.p>
 
         <motion.div

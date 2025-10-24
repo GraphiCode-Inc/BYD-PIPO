@@ -24,6 +24,11 @@ const FoundUs = dynamic(
   () => import("@/components/layout/landing/FoundUs/section"),
   { ssr: false, loading: Loading }
 );
+
+const Footer = dynamic(
+  () => import("@/components/layout/landing/Footer/section"),
+  { ssr: false, loading: Loading }
+);
 export default function HomePage() {
   return (
     <div
@@ -36,6 +41,7 @@ export default function HomePage() {
       <CarMaintenanceBenefits />
       <TeamPage />
       <FoundUs />
+      <Footer />
     </div>
   );
 }

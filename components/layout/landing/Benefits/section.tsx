@@ -29,7 +29,7 @@ const services = [
 
 export default function CarMaintenanceBenefits() {
   return (
-    <section className="w-full  py-16">
+    <section className="w-full bg-[#BBBBBB] py-16">
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
         <div className="flex flex-col justify-center items-center gap-[60px]">
           <div className="font-secondary lg:text-[30px] font-semibold align-middle text-black lg:w-[569.3941040039062px]">
