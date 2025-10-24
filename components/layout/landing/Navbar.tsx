@@ -88,7 +88,7 @@ function Navbar(props: any) {
                 quality={85}
               />{" "}
             </span>
-            <p> Book Now </p>{" "}
+            <a href="/maintenance"> Book Now </a>{" "}
           </button>
         </div>
 

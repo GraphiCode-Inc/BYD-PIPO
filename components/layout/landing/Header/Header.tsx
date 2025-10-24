@@ -37,7 +37,7 @@ export default function Header() {
       </div>
 
       {/* Support button fixed at bottom right */}
-      <div className="fixed top-[60%] right-[6%] z-50 flex flex-col items-center gap-2">
+      <div className="fixed  top-[60%] right-[6%] z-[100] flex flex-col items-center gap-2">
         {/* Message bubbles above support icon */}
         <div className="flex flex-col gap-2 mb-2 items-end text-white font-secondary">
           <div className="bg-[#00000033] mr-[40px] ml-[-20px] backdrop-blur-[42.55722427368164px] rounded-[69.7px] px-4 py-2 text-[18.07px] font-medium shadow-lg">
